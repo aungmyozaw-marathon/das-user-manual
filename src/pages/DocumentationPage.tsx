@@ -2,12 +2,12 @@ import React from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import DashboardOverview from '../components/DashboardOverview';
-import User from '../components/User';
-import Role from '../components/Role';
+import User from '../components/settings/User';
+import Role from '../components/settings/Role';
 import { getPageContent } from '../utils/contentUtils';
-import Product from '../components/Product';
-import ProductGroup from '../components/ProductGroup';
-import InventoryAdjustment from '../components/InventoryAdjustment';
+import Product from '../components/product/Product';
+import ProductGroup from '../components/product/ProductGroup';
+import InventoryAdjustment from '../components/product/InventoryAdjustment';
 
 const DocumentationPage: React.FC = () => {
   const { pathname } = useLocation();
